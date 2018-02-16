@@ -1,8 +1,7 @@
 FROM ubuntu:17.10
 
 RUN apt-get update && apt-get install -y \
-       openjdk-8-jre \
-       openjdk-8-jdk \
+       default-jdk \
        git \
        curl \
     && rm -rf /var/lib/apt/lists/*
